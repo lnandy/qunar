@@ -62,13 +62,27 @@
 		align-items: center;
 		position: relative;
 	}
-	.content > div:after{
+	.content > div:before{
+		content: "";
 		position: absolute;
-		content:'';
+		font-size: 0;
+		line-height: 0;
+		top: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
+		background: none;
+		-webkit-transform-origin: 0 0;
+		-ms-transform-origin: 0 0;
+		transform-origin: 0 0;
+		box-sizing: border-box;
+		pointer-events: none;
+		width: 200%;
+		height: 200%;
+		-webkit-transform: scale(.5);
+		-ms-transform: scale(.5);
+		transform: scale(.5);
 		border-bottom: 1px solid #d4d4d4;
 		border-right: 1px solid #d4d4d4;
-		opacity: 0.5;
 	}
 </style>
