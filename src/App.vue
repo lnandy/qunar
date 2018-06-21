@@ -42,6 +42,8 @@ export default {
   body {
     margin: 0;
     padding: 0;
+    font-family: arial,sans-serif;
+    color: #333;
   }
   .separator{
     background-color: #eee;
