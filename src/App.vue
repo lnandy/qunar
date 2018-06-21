@@ -2,6 +2,7 @@
   <div id="app">
       <banner :url="bannerUrl">{{bannerUrl}}</banner>
       <menu-widget v-for="(i,j) in menuList" :menuList="i['list']"
+      :event="i['event']"
       :bgcolor="i['bgcolor']"
       :bgimage="i['bgimage']"></menu-widget>
       <div class="separator"></div>
@@ -25,7 +26,8 @@ export default {
       bannerUrl: 'https://source.qunarzz.com/site/images/wap/home/recommend/iphoneplus/20180614_CPM_WAP_DE10841.jpg',
       menuList:{'hotel':{'list':['酒店','特惠酒店','海外酒店','客栈','民宿'],
                           'bgcolor':'#f55',
-                          'bgimage':'url(//s.qunarzz.com/touch_home/imgs/hotel.png)'},
+                          'bgimage':'url(//s.qunarzz.com/touch_home/imgs/hotel.png)',
+                          'event':['hotel','teHotel','globalHotel','smallHotel','minHotel']},
                 'ticket':{'list':['机票','低价机票','汽车票 · 船票','火车票','专车 · 自驾'],
                           'bgcolor':'#00a7f7',
                           'bgimage':'url(//s.qunarzz.com/touch_home/imgs/flight.png)'},
