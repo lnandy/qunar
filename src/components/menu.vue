@@ -1,7 +1,7 @@
 <template>
 	<div class="container" :style="{backgroundColor:bgcolor}">
-		<div class="classify">
-			<p  @click="handelclick(0)">{{menuList[0]['name']}}</p>
+		<div class="classify"  @click="handelclick(0)">
+			<p>{{menuList[0]['name']}}</p>
 			<i class="icon" :style="{background:bgimage}"></i>
 		</div>
 		<div class="content">
