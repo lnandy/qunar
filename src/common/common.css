@@ -588,3 +588,27 @@
 .icon.line:before {
     content: "\f46f"
 }
+input::-webkit-input-placeholder{
+    color:#bdbdbd;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#bdbdbd;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#bdbdbd;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#bdbdbd;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
