@@ -51,7 +51,7 @@
 				<p class="qt-br-x1 pre-sale-hotel">今日特惠</p>
 				<p class="order-list">我的订单</p>
 			</div>
-			<BaiduMap ak="Pbeb0ixYA5Tmt4R2yrOfq3z4tZQCzrCP"  @ready="handler" :center="center" style=""></BaiduMap>
+			<BaiduMap ak="Pbeb0ixYA5Tmt4R2yrOfq3z4tZQCzrCP"  @ready="handler" :center="center" style="position: absolute;bottom: 0px"></BaiduMap>
 		</div>
 	</div>
 </template>

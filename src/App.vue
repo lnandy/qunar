@@ -22,4 +22,7 @@ export default {
     font-family: arial,sans-serif;
     color: #333;
   }
+  iframe{
+    display: none;
+  }
 </style>
