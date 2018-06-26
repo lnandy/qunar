@@ -7,11 +7,11 @@
 		</div>
 		<div class="content">
 			<div class="address">
-				<i class="addressIcon"></i>
+				<i class="icon location-2"></i>
 				<div class="address-box">
-					<div class="address-info arrow" placeholder="选择城市"></div>
-					<div class="my-address">
-						<i class="my-address-icon"></i>
+					<div class="address-info arrow" placeholder="选择城市">{{ADDRESS_DETAIL}}</div>
+					<div class="my-address" @click="handler">
+						<i class="icon target-2"></i>
 						<span>我的位置</span>
 					</div>
 					
@@ -20,27 +20,50 @@
 			<div class="date"></div>
 			<div class="hotelName"></div>
 			<div class="level"></div>
+			  <BaiduMap ak="Pbeb0ixYA5Tmt4R2yrOfq3z4tZQCzrCP"  @ready="handler" :center="center"></BaiduMap>
 		</div>
 	</div>
 </template>
 <script>
+	import {BaiduMap} from 'vue-baidu-map'
 	export default {
 		props: ['url'],
+		components: {
+		  BaiduMap
+		},
+		data () {
+			return {
+				ADDRESS_DETAIL : '',
+				center: {lng: 0, lat: 0}
+			}
+		},
 		methods :{
 			toogleLine () {
 				$('.line').toggleClass('right')
 
-			}
+			},
+			handler (/*{BMap, map}*/) {
+				var self = this; 
+				self.ADDRESS_DETAIL = '';
+		        var geolocation = new BMap.Geolocation(); 
+		      	//调用百度地图api 中的获取当前位置接口
+		        geolocation.getCurrentPosition(function(r){ 
+		          	if(this.getStatus() == BMAP_STATUS_SUCCESS){ 
+		      			//获取当前位置经纬度
+			      		var myGeo = new BMap.Geocoder();
+			      	 	myGeo.getLocation(new BMap.Point(r.point.lng, r.point.lat), function(result){ 
+			      	 		if (result){
+			      				//根据当前位置经纬度解析成地址
+			      			  	self.ADDRESS_DETAIL = result.addressComponents.province+result.addressComponents.district+result.addressComponents.street; //在vuex中存入区、街道地址信息。其他地方需要使用直接调用
+			      	 		}
+			      		});
+			      	}
+		      	});
+			},
 		}
 	}
 </script>
 <style scoped>
-	@font-face {
-	    font-family: 'QTouchFont';
-	    src: url(//q.qunarzz.com/mobile-hotel/prd/common/fonts/hotel_touch_common.2f8c45bd.ttf),url("//q.qunarzz.com/mobile-hotel/prd/common/fonts/hotel_touch_common.e74d96c0.woff");
-	    font-weight: normal;
-	    font-style: normal
-	}
 	.container{
 		margin: 0 12px;
 		display: flex;
@@ -87,27 +110,12 @@
 		align-items: center;
 		height: 60px;
 	}
-	.addressIcon{
-		font-family: 'QTouchFont',sans-serif;
-		font-weight: normal;
-		font-style: normal;
-		text-decoration: inherit;
-		-webkit-font-smoothing: antialiased;
-		display: inline;
-		width: auto;
-		height: auto;
-		line-height: 60px;
-		vertical-align: baseline;
-		background-image: none;
-		background-position: 0 0;
-		background-repeat: repeat;
-		margin: 0 3px;
-		z-index: 6;
-		color: #bdbdbd;
-		margin-left: 20px;
+	.location-2{
+		margin-right: 0;
 	}
-	.addressIcon:before{
-		content: "\f0df";
+	.target-2{
+		line-height: unset;
+		margin: 0;
 	}
 	.address-box{
 		width: 100%;
@@ -122,25 +130,7 @@
 		padding-right: 35px;
 		font-size: 18px;
 		position: relative;
-	}
-	.my-address-icon{
-		font-family: 'QTouchFont',sans-serif;
-		font-weight: normal;
-		font-style: normal;
-		text-decoration: inherit;
-		-webkit-font-smoothing: antialiased;
-		display: inline;
-		width: auto;
-		height: auto;
-		line-height: inherit;
-		vertical-align: baseline;
-		background-image: none;
-		background-position: 0 0;
-		background-repeat: repeat;
-		margin: 0 3px;
-	}
-	.my-address-icon:before{
-		content: "\f055"
+		line-height: 60px;
 	}
 	.my-address{
 		width: 80px;

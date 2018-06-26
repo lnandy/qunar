@@ -4,10 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import $ from 'jquery' 
+import '@/common/common.css'
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
+
+//Pbeb0ixYA5Tmt4R2yrOfq3z4tZQCzrCP
+ /*eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
