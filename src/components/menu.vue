@@ -52,6 +52,7 @@
 		width: 42px;
 		height: 46px;
 		background-position: center center !important;
+		margin-left: 0;
 	}
 	.content{
 		display: flex;

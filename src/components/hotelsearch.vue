@@ -47,7 +47,7 @@
 			</div>
 			<div class="other-link">
 				<p class="qt-br-x1 recent">最近浏览</p>
-				<p class="qt-br-x1 discover-hotel"><a href="http://touch.qunar.com/h5/hotel/HotelChoice?cityUrl=beijing_city&amp;cityName=北京">发现酒店</a></p>
+				<p class="qt-br-x1 discover-hotel"><a @click="findHotel" >发现酒店</a></p>
 				<p class="qt-br-x1 pre-sale-hotel">今日特惠</p>
 				<p class="order-list">我的订单</p>
 			</div>
@@ -57,6 +57,8 @@
 </template>
 <script>
 	import {BaiduMap} from 'vue-baidu-map'
+	import moment from 'moment'
+	
 	export default {
 		props: ['url'],
 		components: {
@@ -89,15 +91,32 @@
 		          	if(this.getStatus() == BMAP_STATUS_SUCCESS){ 
 		      			//获取当前位置经纬度
 			      		var myGeo = new BMap.Geocoder();
+			      		self.center = {lng: r.point.lng, lat: r.point.lat};
 			      	 	myGeo.getLocation(new BMap.Point(r.point.lng, r.point.lat), function(result){ 
 			      	 		if (result){
 			      				//根据当前位置经纬度解析成地址
 			      			  	self.ADDRESS_DETAIL = result.addressComponents.province+result.addressComponents.district+result.addressComponents.street; //在vuex中存入区、街道地址信息。其他地方需要使用直接调用
 			      	 		}
 			      		});
+			      		self.locationAndDate();
 			      	}
 		      	});
 			},
+			locationAndDate () {
+				/*checkInTime
+				leaveTime
+				location=gg|39.90854609463673|116.39750105711286&checkInDate=2018-06-27&checkOutDate=2018-06-28*/
+				moment.locale('zh-cn');
+				var param = "location=gg|" + this.center.lat + "|" + this.center.lng + "&checkInDate=" + 
+							moment(this.checkInTime).format('YYYY-MM-DD') + "&checkOutDate=" + 
+							moment(this.leaveTime).format('YYYY-MM-DD');
+				var url = 'https://touch.qunar.com/hotel/hotellist?' + param;
+				this.$emit('locationAndDate',url);
+			},
+			findHotel () {
+				var url = 'http://touch.qunar.com/h5/hotel/HotelChoice?cityUrl=beijing_city&amp;cityName=北京';
+				this.$emit('openFrame',url);
+			}
 		},
 		mounted() {
 			
