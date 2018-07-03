@@ -33,7 +33,7 @@ export default {
   data () {
     return {
       nearHotelUrl: '',
-      bannerUrl: '//simg1.qunarzz.com/site/images/wap/home/recommend/20160509_banner_750x376.jpg',
+      bannerUrl: 'https://simg1.qunarzz.com/site/images/wap/home/recommend/20160509_banner_750x376.jpg',
     }
   },
   methods : {
@@ -83,7 +83,7 @@ export default {
 	top: -62px;
 	position: relative;
 }
-.previous{
+#hotel .previous{
   position: absolute;
   left: 15px;
   top: 10px;
@@ -106,7 +106,7 @@ export default {
 .coupons-btn .coupons-icon {
   width: 13px;
   height: 13px;
-  background-image: url(//source.qunarzz.com/site/images/wap/home/recommend/coupons_gift_btn.png);
+  background-image: url(https://source.qunarzz.com/site/images/wap/home/recommend/coupons_gift_btn.png);
   background-size: 13px 13px;
   margin: 0 auto 2px;
 }
@@ -121,7 +121,7 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-.q-near-hotel{
+#hotel .q-near-hotel{
   font-size: 16px;
   color: unset;
   line-height: unset;
@@ -147,7 +147,7 @@ export default {
   content: '';
   width: 10px;
   height: 15px;
-  background: url(//simg1.qunarzz.com/site/images/wap/touch/images/v2/images2x/fx_newicon.png) 0 0 no-repeat;
+  background: url(https://simg1.qunarzz.com/site/images/wap/touch/images/v2/images2x/fx_newicon.png) 0 0 no-repeat;
   background-size: 300px 150px;
   position: absolute;
   top: 4px;

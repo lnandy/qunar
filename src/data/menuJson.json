@@ -23,7 +23,7 @@
       }
     ],
     "bgcolor": "#f55",
-    "bgimage": "url(//s.qunarzz.com/touch_home/imgs/hotel.png)"
+    "bgimage": "url(https://s.qunarzz.com/touch_home/imgs/hotel.png)"
   },
   "ticket": {
     "list": [
@@ -49,7 +49,7 @@
       }
     ],
     "bgcolor": "#00a7f7",
-    "bgimage": "url(//s.qunarzz.com/touch_home/imgs/flight.png)"
+    "bgimage": "url(https://s.qunarzz.com/touch_home/imgs/flight.png)"
   },
   "holiday": {
     "list": [
@@ -75,7 +75,7 @@
       }
     ],
     "bgcolor": "#7cb832",
-    "bgimage": "url(//s.qunarzz.com/touch_home/imgs/holiday.png)"
+    "bgimage": "url(https://s.qunarzz.com/touch_home/imgs/holiday.png)"
   },
   "money": {
     "list": [
