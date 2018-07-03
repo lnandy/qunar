@@ -3,7 +3,7 @@
 	    <div class="shadow-mask"></div>
 	    <div class="coupon-wrap unlogin-wrap">
 	        <div class="coupon-banner">
-	            <img src="//source.qunarzz.com/site/images/wap/home/recommend/coupon_mask_unlogin.png">
+	            <img src="https://source.qunarzz.com/site/images/wap/home/recommend/coupon_mask_unlogin.png">
 	            <div class="title">
 	            	<p>登录解锁即可享受福利</p>
 	            </div>
@@ -34,7 +34,7 @@
 	.coupons-btn .coupons-icon {
 	    width: 13px;
 	    height: 13px;
-	    background-image: url("//source.qunarzz.com/site/images/wap/home/recommend/coupons_gift_btn.png");
+	    background-image: url("https://source.qunarzz.com/site/images/wap/home/recommend/coupons_gift_btn.png");
 	    background-size: 13px 13px;
 	    margin: 0 auto 2px
 	}

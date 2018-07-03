@@ -85,7 +85,7 @@ export default {
 }
 #hotel .previous{
   position: absolute;
-  left: 15px;
+  left: 12px;
   top: 10px;
   display: block;
   z-index: 1;
