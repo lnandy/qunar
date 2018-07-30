@@ -1,20 +1,20 @@
 <template>
 	<div class="container" :style="{backgroundColor:bgcolor}">
-		<div class="classify">
-			<p  @click="handelclick(0)">{{menuList[0]}}</p>
+		<div class="classify"  @click="handelclick(0)">
+			<p>{{menuList[0]['name']}}</p>
 			<i class="icon" :style="{background:bgimage}"></i>
 		</div>
 		<div class="content">
-			<div v-for="(i,j) in menuList" v-if="!!j" @click="handelclick(j)">{{i}}</div>
+			<div v-for="(i,j) in menuList" v-if="!!j" @click="handelclick(j)">{{i.name}}</div>
 		</div>
 	</div>
 </template>
 <script>
 	export default {
-		props: ['url','menuList','bgcolor','bgimage','event'],
+		props: ['url','menuList','bgcolor','bgimage'],
 		methods: {
 			handelclick (index) {
-				this.$emit(this.event[index])
+				this.$parent.$router.push(this.menuList[index].event);
 			}
 		}
 	}
@@ -52,6 +52,7 @@
 		width: 42px;
 		height: 46px;
 		background-position: center center !important;
+		margin-left: 0;
 	}
 	.content{
 		display: flex;

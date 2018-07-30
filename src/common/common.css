@@ -1,0 +1,614 @@
+@font-face {
+    font-family: 'QTouchFont';
+    src: url(https://q.qunarzz.com/mobile-hotel/prd/common/fonts/hotel_touch_common.2f8c45bd.ttf),url("//q.qunarzz.com/mobile-hotel/prd/common/fonts/hotel_touch_common.e74d96c0.woff");
+    font-weight: normal;
+    font-style: normal
+}
+.icon{
+  font-family: 'QTouchFont',sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: 60px;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+  margin: 0 3px;
+  z-index: 6;
+  color: #bdbdbd;
+  margin-left: 20px;
+}
+.icon:before {
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none
+}
+
+.icon.home:before {
+    content: "\f227"
+}
+
+.icon.home-2:before {
+    content: "\f228"
+}
+
+.icon.office:before {
+    content: "\f098"
+}
+
+.icon.phone:before {
+    content: "\f20a"
+}
+
+.icon.mobile:before {
+    content: "\e110"
+}
+
+.icon.wifi:before {
+    content: "\f168"
+}
+
+.icon.location-2:before {
+    content: "\f0df"
+}
+
+.icon.map:before {
+    content: "\f187"
+}
+
+.icon.calendar:before {
+    content: "\f14c"
+}
+
+.icon.user:before {
+    content: "\f0eb"
+}
+.icon.spinner:before {
+    content: "\f48a"
+}
+
+.icon.search:before {
+    content: "\f407"
+}
+
+.icon.search2:before {
+    content: "\f3ba"
+}
+
+.icon.remove:before {
+    content: "\f05b"
+}
+
+.icon.notification:before {
+    content: "\f393"
+}
+
+.icon.information:before {
+    content: "\f069"
+}
+
+.icon.question:before {
+    content: "\f0c9"
+}
+
+.icon.cancel-circle:before {
+    content: "\f093"
+}
+
+.icon.close:before {
+    content: "\f471"
+}
+
+.icon.checkmark:before {
+    content: "\f472"
+}
+
+.icon.minus:before {
+    content: "\f38c";
+    color: #1ba9ba
+}
+
+.icon.plus:before {
+    content: "\f38d";
+    color: #1ba9ba
+}
+
+.icon.previous:before {
+    content: "\f3cd"
+}
+
+.icon.checkbox:before {
+    content: "\f35f";
+    color: #1ba9ba
+}
+
+.icon.checkbox.checked:before {
+    content: "\f35e";
+    color: #1ba9ba
+}
+
+.icon.checkbox.hollow.checked:before {
+    content: "\f496";
+    color: #1ba9ba
+}
+
+.icon.radio:before {
+    content: "\f35d";
+    color: #1ba9ba
+}
+
+.icon.radio.checked:before {
+    content: "\f360";
+    color: #1ba9ba
+}
+
+.icon.rocket:before {
+    content: "\f14a"
+}
+
+.icon.arrow-down:before {
+    content: "\f3cb"
+}
+
+.icon.arrow-up:before {
+    content: "\f3ca"
+}
+
+.icon.arrow-left:before {
+    content: "\f3cd"
+}
+
+.icon.arrow-right:before {
+    content: "\f3cc"
+}
+
+.icon.arrow-down-4:before {
+    content: "\f3ff";
+    font-size: 16px
+}
+
+.icon.arrow-up-4:before {
+    content: "\f3fe";
+    font-size: 16px
+}
+
+.icon.arrow-up-5:before {
+    content: "\e041"
+}
+
+.icon.arrow-down-5:before {
+    content: "\f528"
+}
+
+.icon.double-arrow-down:before {
+    content: "\e043"
+}
+
+.icon.double-arrow-up:before {
+    content: "\e044"
+}
+
+.icon.add:before {
+    content: "\f298"
+}
+
+.icon.menu:before {
+    content: "\f020"
+}
+
+.icon.star:before {
+    content: "\e04b"
+}
+
+.icon.target-2:before {
+    content: "\f055"
+}
+
+.icon.q-order:before {
+    content: "\f4bf"
+}
+
+.icon.q-all-menu:before {
+    content: "\f0db"
+}
+
+.icon.q-hotel:before {
+    content: "\f4d6"
+}
+
+.icon.q-flight:before {
+    content: "\f49a"
+}
+
+.icon.q-dujia:before {
+    content: "\f4d5"
+}
+
+.icon.q-train:before {
+    content: "\f1ee"
+}
+
+.icon.q-menpiao:before {
+    content: "\f1f6"
+}
+
+.icon.q-qiandai:before {
+    content: "\f08f"
+}
+
+.icon.q-smallcar:before {
+    content: "\f1f3"
+}
+
+.icon.q-keche:before {
+    content: "\f1eb"
+}
+
+.icon.q-luotuo:before {
+    content: "\e045"
+}
+
+.icon.q-luotuo-1:before {
+    content: "\e046"
+}
+
+.icon.q-luotuo-2:before {
+    content: "\e047"
+}
+
+.icon.q-luotuo-3:before {
+    content: "\e048"
+}
+
+.icon.q-luotuo-4:before {
+    content: "\e049"
+}
+
+.icon.q-360:before {
+    content: "\f24f"
+}
+
+.icon.q-720:before {
+    content: "\e216"
+}
+
+.icon.q-vr:before {
+    content: "\e322"
+}
+
+.icon.image:before {
+    content: "\f251"
+}
+
+.icon.q-bao:before {
+    content: '\f24d'
+}
+
+.icon.q-bao-2:before {
+    content: '\f24e'
+}
+
+.icon.q-top:before {
+    content: "\f3a4"
+}
+
+.icon.q-food:before {
+    content: "\f20d"
+}
+
+.icon.q-recreation:before {
+    content: "\f20e"
+}
+
+.icon.q-parking:before {
+    content: "\f150"
+}
+
+.icon.alarm:before {
+    content: "\f154"
+}
+
+.icon.subwapstation:before {
+    content: "\f141"
+}
+
+.icon.featuretheme:before {
+    content: "\f145"
+}
+
+.icon.tradearea:before {
+    content: "\f214"
+}
+
+.icon.touristspots:before {
+    content: "\f279"
+}
+
+.icon.airportstation:before {
+    content: "\f143"
+}
+
+.icon.q-discover-hotel:before {
+    content: "\f34c"
+}
+
+.icon.q-near-hotel:before {
+    content: "\f284"
+}
+
+.icon.q-pre-sale-hotel:before {
+    content: "\f349"
+}
+
+.icon.q-star-price:before {
+    content: "\f2fc"
+}
+
+.icon.q-browse-history:before {
+    content: "\f1f8"
+}
+
+.icon.q-order-list:before {
+    content: "\f053"
+}
+
+.icon.q-thumbup:before {
+    content: "\f04f"
+}
+
+.icon.q-hot:before {
+    content: "\f072"
+}
+
+.icon.q-hot-2:before {
+    content: "\f14a"
+}
+
+.icon.q-sinaweibo:before {
+    content: "\f030"
+}
+
+.icon.q-moments:before {
+    content: "\f1ce"
+}
+
+.icon.q-wechat:before {
+    content: "\f258"
+}
+
+.icon.q-jifen:before {
+    content: "\f35c"
+}
+
+.icon.q-circle-ok:before {
+    content: "\f0ff"
+}
+
+.icon.q-help:before {
+    content: "\f393"
+}
+
+.icon.q-comment-circle:before {
+    content: "\f37e"
+}
+
+.icon.q-ordersale-transfer:before {
+    content: "\f483"
+}
+
+.icon.q-ordersale-ok:before {
+    content: "\f3f7"
+}
+
+.icon.q-ordersale-fail:before {
+    content: "\f3f4"
+}
+
+.icon.qt-time:before {
+    content: "\f106"
+}
+
+.icon.qt-email:before {
+    content: "\f493"
+}
+
+.icon.q-circle-cancel:before {
+    content: "\f3f4"
+}
+
+.icon.q-phone:before {
+    content: "\f162"
+}
+
+.icon.q-alarm:before {
+    content: "\f1fd"
+}
+
+.icon.q-discount:before {
+    content: "\f3b1"
+}
+
+.icon.qt-dujia:before {
+    content: "\f1e5"
+}
+
+.icon.flight-left:before {
+    content: "\f1ea"
+}
+
+.icon.q-map:before {
+    content: "\f186"
+}
+
+.icon.ticket:before {
+    content: "\f219"
+}
+
+.icon.qt-flight:before {
+    content: "\f4e3"
+}
+
+.icon.qt-vip:before {
+    content: "\f4a5"
+}
+
+.icon.qt-user:before {
+    content: "\f290"
+}
+
+.icon.qt-zdf:before {
+    content: "\f1f5"
+}
+
+.icon.info-circle:before {
+    content: "\f0f6"
+}
+
+.icon.add-circle:before {
+    content: "\f3f8"
+}
+
+.icon.user-circle:before {
+    content: "\f24c"
+}
+
+.icon.location-3:before {
+    content: "\f008"
+}
+
+.icon.q-pillow:before {
+    content: "\f09b"
+}
+
+.icon.q-blanket:before {
+    content: "\f0b8"
+}
+
+.icon.q-quilt:before {
+    content: "\f0ba"
+}
+
+.icon.q-slipper:before {
+    content: "\f2d6"
+}
+
+.icon.q-toothbrush:before {
+    content: "\f2da"
+}
+
+.icon.q-towel:before {
+    content: "\e248"
+}
+
+.icon.q-bathtowel:before {
+    content: "\e24e"
+}
+
+.icon.q-shampoo:before {
+    content: "\e24c"
+}
+
+.icon.q-cup:before {
+    content: "\e24a"
+}
+
+.icon.q-waiting:before {
+    content: "\e1ba"
+}
+
+.icon.q-gantan:before {
+    content: "\e159"
+}
+
+.icon.q-password:before {
+    content: "\e10f"
+}
+
+.icon.q-hotel2:before {
+    content: "\f1f4"
+}
+
+.icon.ok-circle:before {
+    content: "\f3f6"
+}
+
+.icon.q-umbrella:before {
+    content: "\f278"
+}
+
+.icon.q-bed:before {
+    content: "\f16c"
+}
+
+.icon.q-breakfast:before {
+    content: "\f217"
+}
+
+.icon.q-money:before {
+    content: "\f244"
+}
+
+.icon.meeting:before {
+    content: "\f177"
+}
+
+.icon.intercar:before {
+    content: "\f1ec"
+}
+
+.icon.breakfast:before {
+    content: "\f217"
+}
+
+.icon.house:before {
+    content: "\e23e"
+}
+
+.icon.discount:before {
+    content: "\e17b"
+}
+
+.icon.time:before {
+    content: "\e168"
+}
+
+.icon.brand:before {
+    content: "\e291"
+}
+
+.icon.share:before {
+    content: "\f0dd"
+}
+
+.icon.line:before {
+    content: "\f46f"
+}
+input::-webkit-input-placeholder{
+    color:#bdbdbd;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#bdbdbd;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#bdbdbd;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#bdbdbd;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}

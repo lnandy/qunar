@@ -16,5 +16,6 @@
 		height: auto;
 		display: block;
 		margin-bottom: 5px;
+		max-height: 207px;
 	}
 </style>

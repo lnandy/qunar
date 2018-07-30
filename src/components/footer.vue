@@ -33,8 +33,8 @@
 <style scoped>
 	@font-face {
 	    font-family: 'QEntranceFont2';
-	    src: url('//s.qunarzz.com/touch_home/font/1.0.0/touch_home.eot');
-	    src: url('//s.qunarzz.com/touch_home/font/1.0.0/touch_home.woff') format('woff'),url('//s.qunarzz.com/touch_home/font/1.0.0/touch_home.ttf') format('truetype'),url('//s.qunarzz.com/touch_home/font/1.0.0/touch_home.svg#iconfont') format('svg')
+	    src: url('https://s.qunarzz.com/touch_home/font/1.0.0/touch_home.eot');
+	    src: url('https://s.qunarzz.com/touch_home/font/1.0.0/touch_home.woff') format('woff'),url('https://s.qunarzz.com/touch_home/font/1.0.0/touch_home.ttf') format('truetype'),url('https://s.qunarzz.com/touch_home/font/1.0.0/touch_home.svg#iconfont') format('svg')
 	}
 	.footer{
 		display: flex;

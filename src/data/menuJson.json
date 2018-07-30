@@ -1,0 +1,97 @@
+{
+  "hotel": {
+    "list": [
+      {
+        "name": "酒店",
+        "event": "hotel"
+      },
+      {
+        "name": "特惠酒店",
+        "event": "teHotel"
+      },
+      {
+        "name": "海外酒店",
+        "event": "globalHotel"
+      },
+      {
+        "name": "客栈",
+        "event": "smallHotel"
+      },
+      {
+        "name": "民宿",
+        "event": "minHotel"
+      }
+    ],
+    "bgcolor": "#f55",
+    "bgimage": "url(https://s.qunarzz.com/touch_home/imgs/hotel.png)"
+  },
+  "ticket": {
+    "list": [
+      {
+        "name": "机票",
+        "event": "hotel"
+      },
+      {
+        "name": "低价机票",
+        "event": "teHotel"
+      },
+      {
+        "name": "汽车票 · 船票",
+        "event": "globalHotel"
+      },
+      {
+        "name": "火车票",
+        "event": "smallHotel"
+      },
+      {
+        "name": "专车 · 自驾",
+        "event": "minHotel"
+      }
+    ],
+    "bgcolor": "#00a7f7",
+    "bgimage": "url(https://s.qunarzz.com/touch_home/imgs/flight.png)"
+  },
+  "holiday": {
+    "list": [
+      {
+        "name": "度假",
+        "event": "hotel"
+      },
+      {
+        "name": "景点 · 门票",
+        "event": "teHotel"
+      },
+      {
+        "name": "旅游团购",
+        "event": "globalHotel"
+      },
+      {
+        "name": "自由行",
+        "event": "smallHotel"
+      },
+      {
+        "name": "周边 · 短途",
+        "event": "minHotel"
+      }
+    ],
+    "bgcolor": "#7cb832",
+    "bgimage": "url(https://s.qunarzz.com/touch_home/imgs/holiday.png)"
+  },
+  "money": {
+    "list": [
+      {
+        "name": "金融 · 理财",
+        "event": "hotel"
+      },
+      {
+        "name": "保险 · 车险",
+        "event": "teHotel"
+      },
+      {
+        "name": "全球购",
+        "event": "globalHotel"
+      }
+    ],
+    "bgcolor": "#f90"
+  }
+}
